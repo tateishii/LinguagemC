@@ -62,7 +62,7 @@
 
  - Programa com "laço do" é parecido com o "while" mas muito mais fácil de dar erro pois ele não para no meio do código ele apenas FAZ no caso DO = FAÇA, ele "obriga" o sistema a executar o programa.
 
- ## 8-Exercícios
+ ## 8-23032022
  ### O que foi aprendido?
 
  - Programa utilizando "desvio de fluxo" ele fará um teste para saber se é um resultado se não ele fará outra operação para dar o resultado "contrário".
@@ -84,7 +84,7 @@
 
  - Programa que "adiciona" na biblioteca como (#include "elementos").
 
- ## 11-31032022
+ ## 11-Trabalho2
  ### O que foi aprendido?
 
  - Programa utilizando "array" que serve como conjunto de dados de um determinado assunto.
