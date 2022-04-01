@@ -1,3 +1,5 @@
+//Programa que utiliza as bibliotecas em .h
+
 #include<stdio.h>
 #include<stdlib.h>
 #include "curso.h"
@@ -5,18 +7,20 @@
 
 void gravar(){
 
-    FILE *arquivo;
+    FILE *arquivo;  //cria um arquivo de texto usando ponteiro
 
-    arquivo = fopen("dadosdocurso.txt", "w");
-    if(arquivo==NULL){
+    arquivo = fopen("dadosdocurso.txt", "w");   //usa para abrir o arquivo file
+    if(arquivo==NULL){  //caso o arquivo não exista usa if
         printf("Arquivo não encontrado");
-        exit(1);
+        exit(1);    //se não encontrar o arquivo o programa fecha por conta do exit 
     }
     curso cur, *pcur;
     unidade uni, *puni;
 
     pcur = &cur;
     puni = &uni;
+
+    //fgets captura arquivos de texto do tipo char
 
     printf("Digite o nome do curso que você deseja criar:\n");
     fgets(pcur->nomedocurso,30,stdin);
@@ -47,7 +51,9 @@ void gravar(){
 
     printf("Digite o telefone da unidade:\n");
     fgets(puni->telefone,30,stdin);
-    //
+
+    //fprintf é para imprimir do file
+
     fprintf(arquivo,puni->horariofuncionamento);
     fprintf(arquivo,puni->local);
     fprintf(arquivo,puni->unidade);
